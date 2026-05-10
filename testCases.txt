@@ -1,9 +1,9 @@
-Automated test cases:
+Test cases:
 1.
     Given I open the application
     And I see the Account data
-    Then The output value for each security should be calculated correctly 
-        (+ values mean units need to be bought, - values mean units need to be sold)
+    Then The output value (shares to buy/sell) for each security should be calculated correctly 
+        (+ values mean shares need to be bought, - values mean shares need to be sold)
 
 If target % fields are editable
 
@@ -11,9 +11,9 @@ If target % fields are editable
     Given I open the application
     And I see the Account data
     When I update value of the target % for one or more securities
-    Then Output should be correctly recalculated
+    Then Output values should be correctly recalculated
 
-2.
+3.
     Given I open the application
     And I see the Account data
     When I update value of the target % for one or more securities which results in target % sum to be above 100%

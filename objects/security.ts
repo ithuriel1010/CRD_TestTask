@@ -30,10 +30,10 @@ export class Security {
       const varianceValue = (-this.targetVariance / 100) * totalAssets;
       expectedOutput = varianceValue / this.unitPrice;
 
-      // If we assume the application only allows for selling/buying whole units of securities.
+      // If we assume the application only allows for selling/buying whole shares of securities.
       // expectedOutput = parseFloat(expectedOutput.toFixed(0));
 
-      // If we assume the application allows for selling/buying fractal units of securities.
+      // If we assume the application allows for selling/buying fractal shares of securities.
       expectedOutput = parseFloat(expectedOutput.toFixed(2));
     }
 
