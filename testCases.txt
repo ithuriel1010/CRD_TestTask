@@ -1,0 +1,20 @@
+Automated test cases:
+1.
+    Given I open the application
+    And I see the Account data
+    Then The output value for each security should be calculated correctly 
+        (+ values mean units need to be bought, - values mean units need to be sold)
+
+If target % fields are editable
+
+2.
+    Given I open the application
+    And I see the Account data
+    When I update value of the target % for one or more securities
+    Then Output should be correctly recalculated
+
+2.
+    Given I open the application
+    And I see the Account data
+    When I update value of the target % for one or more securities which results in target % sum to be above 100%
+    Then An error message should be displayed

@@ -1,0 +1,24 @@
+{
+  "name": "crd_testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ithuriel1010/CRD_TestTask.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ithuriel1010/CRD_TestTask/issues"
+  },
+  "homepage": "https://github.com/ithuriel1010/CRD_TestTask#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.2",
+    "prettier": "3.8.3"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "account": {
+    "name": "ABC",
+    "totalAssets": 100000,
+    "security": [
+      {
+        "name": "IBM",
+        "target": 20,
+        "current": 10,
+        "targetVariance": -10,
+        "unitPrice": 150,
+        "output": 2
+      },
+      {
+        "name": "MSFT",
+        "target": 20,
+        "current": 20,
+        "targetVariance": 0,
+        "unitPrice": 90,
+        "output": 0
+      },
+      {
+        "name": "ORCL",
+        "target": 20,
+        "current": 30,
+        "targetVariance": 10,
+        "unitPrice": 220,
+        "output": 10
+      },
+      {
+        "name": "AAPL",
+        "target": 30,
+        "current": 30,
+        "targetVariance": 0,
+        "unitPrice": 450,
+        "output": 0
+      },
+      {
+        "name": "HD",
+        "target": 20,
+        "current": 20,
+        "targetVariance": 0,
+        "unitPrice": 70,
+        "output": 0
+      }
+    ]
+  }
+}
