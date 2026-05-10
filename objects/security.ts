@@ -27,11 +27,13 @@ export class Security {
   public calculateExpectedOutput(totalAssets: number): number {
     let expectedOutput = 0;
     if (this.targetVariance !== 0) {
-      const currentValueOfSecurity = (this.current / 100) * totalAssets;
-      const targetValueOfSecurity = (this.target / 100) * totalAssets;
-      const varianceValue = targetValueOfSecurity - currentValueOfSecurity;
+      const varianceValue = (-this.targetVariance / 100) * totalAssets;
       expectedOutput = varianceValue / this.unitPrice;
-      // Assumption: I assumed the application allows for selling/buying fractal units of securities.
+
+      // If we assume the application only allows for selling/buying whole units of securities.
+      // expectedOutput = parseFloat(expectedOutput.toFixed(0));
+
+      // If we assume the application allows for selling/buying fractal units of securities.
       expectedOutput = parseFloat(expectedOutput.toFixed(2));
     }
 
